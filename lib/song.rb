@@ -11,6 +11,7 @@ class Song
     artist = Artist.find_or_create_by_name(new_fn[0])
     song.artist = artist
     song
+    binding.pry
 
   end
 
