@@ -10,7 +10,7 @@ class Song
     song = Song.new(new_fn[1])
     artist = Artist.find_or_create_by_name(new_fn[0])
     song.artist = artist
-    artist.
+    artist.add_song(song)
     song
     binding.pry
 
